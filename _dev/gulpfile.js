@@ -11,7 +11,6 @@ gulp.task('watch', function() {
     gulp.watch('./_src/css/**/*.scss',['sass']);
     gulp.watch('./ejs/**/*.ejs',['ejs']);
     gulp.watch('./_src/js/**/*.js',['babel']);
-    gulp.watch('./_src/images/**',['copy']);
 });
 
-gulp.task('default', ['init']);
+gulp.task('default', ['init','watch','sass','ejs','babel','copy']);
