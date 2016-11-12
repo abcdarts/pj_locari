@@ -1,11 +1,10 @@
 @charset 'UTF-8';
 
+@import "reset";
 
 $base-color: #C9000A;
 $hover-color: #F9E920;
-$bg-color: #F9E920;
-
-@import "reset";
+$bg-color: #FFF;
 
 /*--------------
 	common
@@ -29,7 +28,6 @@ a:hover{
 }
 
 img{
-	width: 100%;
 	vertical-align: bottom;
 }
 
@@ -46,12 +44,48 @@ img{
 	header
 --------------*/
 
+.c_hdr_content{
+	.logo{
+		text-align: center;
+		padding: 10px 0 13px;
+	}
+}
 
 
 /*--------------
 	contents
 --------------*/
 
+.main_area{
+	width: 100%;
+	height: 300px;
+	background: #e4ffe1;
+
+	.inner{
+		width: 700px;
+		height: 240px;
+		margin: 0 auto;
+		padding: 60px 0 0 500px;
+		background: url(../images/main_img_00.png) no-repeat left center;
+		color: #00702d;
+
+		span{
+			border: 1px solid #00702d;
+			padding: 3px;
+		}
+
+		h2{
+			font-weight: bold;
+			font-size: 24px;
+			margin: 13px 0 8px;
+			line-height: 1.5em;
+		}
+
+		p{
+			line-height: 1.5em;
+		}
+	}
+}
 
 /*--------------
 	footer
