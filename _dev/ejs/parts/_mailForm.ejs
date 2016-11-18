@@ -1,737 +1,304 @@
 <section>
 
-          <div id="teiki1" class="pdtb20">
-
-              <div class="form_ttl">購入情報</div>
-
-                  <!-- 定期購入の場合のソース-->
-                  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-
-                  <div class="form_box">
-
-                      <form id="inputForm" name="input_form" method="post" action="/product-buy-form/folcecori235_05/post">
-                      <div class="chenge_tbl">
-
-                          <div class="errorMessage" style="padding: 20px; color: rgb(255, 0, 0); font-size: 12px; text-align: left;">&nbsp;</div>
-
-                          <div class="white_bg">
-
-          <!------------------------------------ここから1つ目の入力フォームエリア-------------------------------------->
-                              <table id="itemselect" width="" cellpadding="0" cellspacing="0" border="0">
-
-
-          <!-----------ここからエラーメッセージ----------->
-        <tbody><tr class="errors odd" style="display: none;">
-            <th colspan="3" class="errorMessage" style="color: rgb(255, 0, 0); font-size: 12px; padding: 20px; text-align: left;">入力エラーがあります</th>
-        </tr>
-        <tr class="errors even" style="display: none;">
-            <td colspan="3" class="errorMessage" style="color: rgb(255, 0, 0); font-size: 12px; padding: 20px; text-align: left;"></td>
-        </tr>
-
-        <!-----------ここまでエラーメッセージ----------->
-
-
-          <!-----------ここから商品セレクトボックス----------->
-        <tr class="odd">
-            <th class="width85">商品の選択<span class="hissu">必須</span></th>
-            <td class="width85">
-                <div id="productSelect">
-                              <select name="easybuy_value" id="easybuy_value" style="background: rgb(220, 220, 220);">
-                        <option value="0"> -- 商品を選択してください -- </option>
-            <option item_id="3" value="3">【単品】通常4,980円Beautyフォルスコリー235</option>
-            <option item_id="8" value="8_reg">【定期ｺｰｽ】初回0円 Beautyﾌｫﾙｽｺﾘｰ235</option>
-        </select>
-                          </div>
-            </td>
-        </tr>
-          <!-----------ここまで商品セレクトボックス----------->
-
-
-          <!-----------ここから商品セレクトボックス----------->
-        <tr class="even">
-            <th class="hidden_second_day" style="display: none;">配送ペース</th>
-            <td class="hidden_second_day" style="display: none;">
-                <select name="regury_pase" style="background: rgb(255, 255, 255);">
-                    <option value="">▼選択</option>
-                    <option value="1W">1週間ごと</option>
-                    <option value="2W">2週間ごと</option>
-                    <option value="3W">3週間ごと</option>
-                    <option value="1M">1か月ごと</option>
-                    <option value="2M">2か月ごと</option>
-                    <option value="3M">3か月ごと</option>
-                    <option value="6M">6か月ごと</option>
-                    <option value="1Y">1年ごと</option>
-                </select>
-            </td>
-        </tr>
-          <!-----------ここまで商品セレクトボックス----------->
-
-
-          <!-----------ここから数量セレクトボックス----------->
-        <tr class="odd">
-            <th class="width15">数量<span class="hissu">必須</span></th>
-            <td class="width15">
-                <select name="item_num" style="background: rgb(255, 255, 255);">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                          </select>
-            </td>
-        </tr>
-          <!-----------ここまで数量セレクトボックス----------->
-
-                              </tbody></table>
-          <!------------------------------------ここまで1つ目の入力フォームエリア-------------------------------------->
-
-
-
-          <!------------------------------------ここから2つ目の入力フォームエリア-------------------------------------->
-
-                              <table class="mgnt20" width="" cellpadding="0" cellspacing="0" border="0">
-
-          <!-----------ここから2回目以降のお客様用入力フォーム----------->
-        <tbody><tr class="odd">
-            <th>2回目以降のお客様はコチラ</th>
-            <td class="al_c">
-                <label><input type="checkbox" name="find_addr" value="1" style="background: rgb(255, 255, 255);">※左をクリックするとフォームが表示されます</label>
-            </td>
-        </tr>
-
-        <tr class="find_addr even" style="display: none;">
-            <th>電話番号</th>
-            <td><input type="text" name="find_phone" value="" size="20" placeholder="例）01234567890" style="background: rgb(255, 255, 255);"></td>
-        </tr>
-
-        <tr class="find_addr odd" style="display: none;">
-            <th>メールアドレス</th>
-            <td><input type="text" name="find_mail" value="" size="40" placeholder="例）example@example.jp" style="background: rgb(255, 255, 255);"></td>
-        </tr>
-
-        <tr class="find_addr even" style="display: none;">
-            <th colspan="2" align="center">
-                <input type="button" name="find_addr_submit" value=" 以前の情報をお届け先に挿入 " style="margin: 10px; font-weight: bold; color: rgb(255, 51, 0); background: rgb(255, 255, 255);">
-            </th>
-        </tr>
-          <!-----------ここまで2回目以降のお客様用入力フォーム----------->
-
-                               </tbody></table>
-          <!------------------------------------ここまで2つ目の入力フォームエリア-------------------------------------->
-
-
-          <div class="form_ttl">お届け先情報</div>
-          <!------------------------------------ここから3つ目の入力フォームエリア-------------------------------------->
-
-                              <table class="mgnt10" width="100%" cellpadding="0" cellspacing="0" border="0">
-
-          <!-----------ここから名前入力フォーム----------->
-                                <tbody><tr class="odd">
-          <th>お名前<span class="hissu">必須</span></th>
-            <td>
-                姓 <input type="text" name="family_name" value="" placeholder="例）鈴木" style="background: rgb(220, 220, 220);">　<span>名 <input type="text" name="given_name" value="" placeholder="例）太郎" style="background: rgb(220, 220, 220);"></span>
-            </td>
-        </tr>
-
-          <!-----------ここまで名前入力フォーム----------->
-
-
-          <!-----------ここからフリガナ入力フォーム----------->
-                                 <tr class="even">
-            <th>フリガナ<span class="hissu">必須</span></th>
-            <td>
-                セイ <input type="text" name="family_name_kana" value="" placeholder="例）スズキ" style="background: rgb(220, 220, 220);">　<span>メイ <input type="text" name="given_name_kana" value="" placeholder="例）タロウ" style="background: rgb(220, 220, 220);"></span>
-            </td>
-        </tr>
-
-          <!-----------ここまでフリガナ入力フォーム----------->
-
-
-          <!-----------ここから郵便番号入力フォーム----------->
-        <tr class="odd">
-            <th>郵便番号<span class="hissu">必須</span></th>
-            <td>
-                <script src="https://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3-https.js" charset="UTF-8"></script>
-                <script type="text/javascript">
-                    jQuery(function($){
-                        $("#add_btn").click(function() {
-                            AjaxZip3.zip2addr('postal_code','','pref','address1');
-                        });
-                    });
-                </script>
-
-                <input type="text" name="postal_code" maxlength="8" value="" placeholder="例）1112222" style="background: rgb(220, 220, 220);">
-                <input type="button" id="add_btn" value="検索" style="background: rgb(255, 255, 255);"><br>
-            </td>
-        </tr>
-          <!-----------ここまで郵便番号入力フォーム----------->
-
-
-          <!-----------ここから都道府県入力フォーム----------->
-        <tr class="even">
-            <th>都道府県<span class="hissu">必須</span></th>
-            <td>
-                <select name="pref" style="background: rgb(220, 220, 220);"><option value="">▼選択</option><option value="1">北海道</option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">秋田県</option><option value="6">山形県</option><option value="7">福島県</option><option value="8">茨城県</option><option value="9">栃木県</option><option value="10">群馬県</option><option value="11">埼玉県</option><option value="12">千葉県</option><option value="13">東京都</option><option value="14">神奈川県</option><option value="15">新潟県</option><option value="16">富山県</option><option value="17">石川県</option><option value="18">福井県</option><option value="19">山梨県</option><option value="20">長野県</option><option value="21">岐阜県</option><option value="22">静岡県</option><option value="23">愛知県</option><option value="24">三重県</option><option value="25">滋賀県</option><option value="26">京都府</option><option value="27">大阪府</option><option value="28">兵庫県</option><option value="29">奈良県</option><option value="30">和歌山県</option><option value="31">鳥取県</option><option value="32">島根県</option><option value="33">岡山県</option><option value="34">広島県</option><option value="35">山口県</option><option value="36">徳島県</option><option value="37">香川県</option><option value="38">愛媛県</option><option value="39">高知県</option><option value="40">福岡県</option><option value="41">佐賀県</option><option value="42">長崎県</option><option value="43">熊本県</option><option value="44">大分県</option><option value="45">宮崎県</option><option value="46">鹿児島県</option><option value="47">沖縄県</option></select>
-            </td>
-        </tr>
-          <!-----------ここまで都道府県入力フォーム----------->
-
-
-          <!-----------ここから住所入力フォーム----------->
-        <tr class="odd">
-            <th>ご住所(市区町村　番地 )<span class="hissu">必須</span></th>
-            <td>
-                <input type="text" name="address1" value="" placeholder="例）○○市○○町○○番地" style="background: rgb(220, 220, 220);">
-            </td>
-        </tr>
-        <tr class="even">
-            <th>アパート名・ビル名など</th>
-            <td>
-                 <input type="text" name="address2" value="" placeholder="例）○○第3ビル○F" style="background: rgb(220, 220, 220);">
-                <span class="small_txt">※建物名・マンション名などは必ず記入してください</span>
-            </td>
-        </tr>
-          <!-----------ここまで住所入力フォーム----------->
-
-
-          <!-----------ここから電話番号入力フォーム----------->
-        <tr class="odd">
-            <th>電話番号<span class="hissu">必須</span></th>
-            <td>
-                <input type="text" name="tel" value="" placeholder="例）01234567890" style="background: rgb(220, 220, 220);">
-                <span class="small_txt">※半角数字・ハイフンなしで入力してください</span>
-            </td>
-        </tr>
-          <!-----------ここまで電話番号入力フォーム----------->
-
-
-
-
-          </tbody></table>
-
-
-          <!-----------ご請求先別入力フォーム----------->
-          <div class="form_ttl">ご請求先情報</div>
-
-          　　　　　　　　　　　　　　
-
-          　　　　　　　　　　　　
-                                 　　 <table class="mgnt10" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tbody><tr class="odd">
-            <th>ご請求先</th><td><label><input id="new_add_flag" type="checkbox" name="new_add_flag" value="1" style="background: rgb(255, 255, 255);">別の住所を入力する</label></td>
-        </tr><tr class="new_add_area even" style="display: none;"><th>お名前<span class="hissu">必須</span></th>
-            <td>
-                姓 <input type="text" name="family_name2" value="" placeholder="例）鈴木" style="background: rgb(220, 220, 220);">　名 <input type="text" name="given_name2" value="" placeholder="例）太郎" style="background: rgb(220, 220, 220);">
-            </td>
-        </tr>
-
-        <tr class="new_add_area odd" style="display: none;">
-            <th>フリガナ<span class="hissu">必須</span></th>
-            <td>
-                セイ <input type="text" name="family_name_kana2" value="" placeholder="例）スズキ" style="background: rgb(220, 220, 220);">　メイ <input type="text" name="given_name_kana2" value="" placeholder="例）タロウ" style="background: rgb(220, 220, 220);">
-            </td>
-        </tr>
-
-        <tr class="new_add_area even" style="display: none;">
-            <th>郵便番号<span class="hissu">必須</span></th>
-            <td>
-                <script src="https://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3-https.js" charset="UTF-8"></script>
-                <input type="text" name="postal_code2" maxlength="8" value="" onkeyup="AjaxZip3.zip2addr(this,'','pref2','new_address1');" placeholder="例）1112222" style="background: rgb(220, 220, 220);"><img src="/themes/simple_02/p/images/loader.gif" id="loader" style="height: 15px; display: none;">&nbsp;&nbsp;&nbsp;
-          ※ 郵便番号が不明な方は<a target="_blank" href="http://www.post.japanpost.jp/zipcode/index.html">コチラ</a>
-            </td>
-        </tr>
-
-        <tr class="new_add_area odd" style="display: none;">
-            <th>都道府県<span class="hissu">必須</span></th>
-            <td>
-                <select name="pref2" style="background: rgb(220, 220, 220);"><option value="">▼選択</option><option value="1">北海道</option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">秋田県</option><option value="6">山形県</option><option value="7">福島県</option><option value="8">茨城県</option><option value="9">栃木県</option><option value="10">群馬県</option><option value="11">埼玉県</option><option value="12">千葉県</option><option value="13">東京都</option><option value="14">神奈川県</option><option value="15">新潟県</option><option value="16">富山県</option><option value="17">石川県</option><option value="18">福井県</option><option value="19">山梨県</option><option value="20">長野県</option><option value="21">岐阜県</option><option value="22">静岡県</option><option value="23">愛知県</option><option value="24">三重県</option><option value="25">滋賀県</option><option value="26">京都府</option><option value="27">大阪府</option><option value="28">兵庫県</option><option value="29">奈良県</option><option value="30">和歌山県</option><option value="31">鳥取県</option><option value="32">島根県</option><option value="33">岡山県</option><option value="34">広島県</option><option value="35">山口県</option><option value="36">徳島県</option><option value="37">香川県</option><option value="38">愛媛県</option><option value="39">高知県</option><option value="40">福岡県</option><option value="41">佐賀県</option><option value="42">長崎県</option><option value="43">熊本県</option><option value="44">大分県</option><option value="45">宮崎県</option><option value="46">鹿児島県</option><option value="47">沖縄県</option></select>
-            </td>
-        </tr>
-
-        <tr class="new_add_area even" style="display: none;">
-            <th>ご住所(市区町村　番地 )<span class="hissu">必須</span></th>
-            <td>
-                <input type="text" name="new_address1" value="" placeholder="例）○○市○○町○○番地" style="background: rgb(220, 220, 220);">
-            </td>
-        </tr>
-
-        <tr class="new_add_area odd" style="display: none;">
-            <th>アパート名・ビル名など</th>
-            <td>
-                 <input type="text" name="new_address2" value="" placeholder="例）○○第3ビル○F" style="background: rgb(220, 220, 220);">
-                <span class="small_txt">※建物名・マンション名などは必ず記入してください</span>
-            </td>
-        </tr>
-
-        <tr class="new_add_area even" style="display: none;">
-            <th>電話番号<span class="hissu">必須</span></th>
-            <td>
-                <input type="text" name="tel2" value="" placeholder="例）01234567890" style="background: rgb(220, 220, 220);">
-                <span class="small_txt">※半角数字・ハイフンなしで入力してください</span>
-            </td>
-        </tr>
-          <!-----------送付先別入力フォーム----------->
-
-
-
-          <!-----------ここからメールアドレス入力フォーム----------->
-        <tr class="odd">
-            <th>メールアドレス<span class="hissu">必須</span></th>
-            <td>
-                <input type="text" name="email" value="" placeholder="例）example@example.jp" style="background: rgb(220, 220, 220);"><br>
-                <span style="font-size:11px;">
-                ※ 携帯電話のメールアドレスの場合、「shop.beauty-leaf.jp」こちらのドメインを指定受信してください。
-                </span>
-            </td>
-        </tr>
-          <!-----------ここまでメールアドレス入力フォーム----------->
-
-          </tbody></table>
-          <table class="mgnt10" width="100%" cellpadding="0" cellspacing="0" border="0">
-
-          <!-----------ここから支払方法選択----------->
-        <tbody><tr class="odd">
-            <th>お支払い方法<span class="hissu">必須</span></th>
-            <td>
-                <span id="reg_payment">
-
-
-                            <label><input type="radio" name="payment" value="1">クレジット</label>  <label><input type="radio" name="payment" value="5">NP後払い</label>  </span>
-            </td>
-        </tr>
-
-
-        <tr class="creditInputForm even" style="display: none;">
-            <td>&nbsp;</td>
-            <td>
-                <table class="credit form" style="display: none;">
-              <tbody>
-              <!-- ヤマトクレジットの時のみ表示 -->
-                  <!-- ヤマトクレジットの時のみ表示 -->
-
-              <tr class="odd">
-                  <th scope="row">カード番号<br>(16桁 ハイフン無し)</th>
-                  <td><input name="number" type="text" maxlength="16" size="20" style="background: rgb(255, 255, 255);" autocomplete="off" tabindex="19" placeholder="1234567890123456"></td>
-              </tr>
-              <tr class="even">
-                  <th scope="row">
-                      カード有効期限
-                  </th>
-                  <!--<td><input name="Expire" type="text" maxlength="4" size="5" tabindex="20" /></td>-->
-                  <td>
-                      <select name="expireM" style="background: rgb(255, 255, 255);">
-                          <option value="0"> -- </option>
-                          <option value="01">01</option>
-                          <option value="02">02</option>
-                          <option value="03">03</option>
-                          <option value="04">04</option>
-                          <option value="05">05</option>
-                          <option value="06">06</option>
-                          <option value="07">07</option>
-                          <option value="08">08</option>
-                          <option value="09">09</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                      </select>月
-                      &nbsp;
-                      <select name="expireY" style="background: rgb(255, 255, 255);">
-          <option value="0"> ---- </option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option></select>
-          年
-                  </td>
-              </tr>
-
-              <tr class="odd">
-                  <th scope="row">
-                      名義人<br>
-                      (半角英字のみ)
-                  </th>
-                  <td>
-                      <input name="name" type="text" style="background: rgb(255, 255, 255);" size="30" placeholder="TAROU SUZUKI"><br>
-                  </td>
-              </tr>
-
-              <!-- セキュリティーコード使用する時のみ表示 -->
-                      <tr class="even">
-                     <th scope="row">
-                         セキュリティーコード
-                     </th>
-                     <td>
-                         <input name="security_code" type="text" style="background: rgb(255, 255, 255);" size="4" placeholder="321">
-                     </td>
-                 </tr>
-                  <!-- セキュリティーコード使用する時のみ表示 -->
-
-                      <tr class="odd">
-                      <td colspan="2" class="loaderResult"></td>
-                  </tr>
-                  </tbody>
-          </table>
-
-          <input type="hidden" name="authori_order_id" value="" style="background: rgb(255, 255, 255);">
-            </td>
-        </tr>
-
-
-
-
-
-
-
-
-          <tr class="bankForm odd" style="display: none;">
-          <td colspan="2">
-              銀行振込の記述
-          </td>
-          </tr>
-
-
-
-
-          <tr class="mailSendForm even" style="display: none;">
-          <td colspan="2">
-              代引き手数料の記述
-          </td>
-          </tr>
-
-
-
-
-          <tr class="npForm odd" style="display: none;">
-          <td colspan="2">
-              ○このお支払方法の詳細
-          商品の到着を確認してから、「コンビニ」「郵便局」「銀行」で
-          後払いできる安心・簡単な決済方法です。請求書は、商品とは別に
-          郵送されますので、発行から14日以内にお支払いをお願いします。
-          ○ご注意
-          後払い手数料：0円
-          後払いのご注文には、株式会社ネットプロテクションズの提供する
-          NP後払いサービスが適用され、サービスの範囲内で個人情報を提供し、
-          代金債権を譲渡します。ご利用限度額は累計残高で54,000円（税込）迄です。
-          詳細は以下URLページにてご確認下さい。
-              http://www.np-atobarai.jp/about/
-          </td>
-          </tr>
-
-
-
-
-          <tr class="nissenForm even" style="display: none;">
-          <td colspan="2">
-             ニッセン＠払いの記述
-          </td>
-          </tr>
-
-
-
-
-          <tr class="atobaraiForm odd" style="display: none;">
-          <td colspan="2">
-             決済手数料：無料
-              ●当サービスは(株)キャッチボールの運営する「後払い.com(ドットコム)」により提供されます。 下記注意事項を確認、同意の上、ご利用下さい。
-          ●銀行・郵便局・コンビニでお支払いいただけます。
-          ●当店にかわり、後払い.com運営会社の(株)キャッチボールより請求書が送られます。
-          ●商品到着と請求書の到着は別になります。
-          ●請求書発行から14日後までにお支払い下さい。
-          ●期日以内にお支払いがない場合、再度の請求ごとに300円の再請求発行手数料がかかりますのでご注意下さい。
-          ●ギフト注文やプレゼント注文（商品配送先が注文者住所と異なる場合）でもご利用いただけます。
-          ●ご本人様確認や後払い.comサービス利用にあたって、お電話・メールにてご連絡させていただく場合がございます。
-          ●お客様が当サイトにおいて登録された個人情報および発注内容は、後払い.comのサービスに必要な範囲のみで(株)キャッチボールに提供させていただきます。
-          ●与信結果によっては当サービスをご利用いただけない場合がございます。その場合は、他の決済方法にご変更いただくことになります。
-          ●商品の配送先を配送業者の営業所止め（営業所来店引取り）、楽天BOX受取り
-          また転送依頼することはできません。
-          ●サービスをご利用いただいた場合は、上記注意事項にご同意いただいたものとみなさせていただきます。
-          </td>
-          </tr>
-
-
-
-
-          <!-----------ここまで支払方法選択----------->
-
-
-          <!-----------ここから性別選択----------->
-          <!--                        <tr>
-            <th>性別</th>
-            <td>
-                <input type="radio" name="sex" value="1"  id="man" /><label for="man">男性</label>
-                <input type="radio" name="sex" value="2"  id="woman" /><label for="woman">女性</label>
-            </td>
-        </tr>
-          -->
-          <!-----------ここまで支払方法選択----------->
-
-
-          <!-----------ここから生年月日入力----------->
-        <tr class="even">
-            <th>生年月日</th>
-            <td>
-                <select name="birth_year" style="background: rgb(255, 255, 255);"><option value="">▼選択</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option></select>年
-                <select name="birth_month" style="background: rgb(255, 255, 255);"><option value="">▼選択</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>月
-                <select name="birth_day" style="background: rgb(255, 255, 255);"><option value="">▼選択</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>日
-            </td>
-        </tr>
-          <!-----------ここまで生年月日入力----------->
-
-
-          <!-----------ここからお届け希望日時指定----------->
-        <tr class="odd">
-            <th>初回お届け日</th>
-            <td>
-          <!--
-                お届け希望日：
-                <select name="delivery_date">
-                          <option value="0">指定なし</option>
-          <option value="1">2016年11月16日</option>
-          <option value="2">2016年11月17日</option>
-          <option value="3">2016年11月18日</option>
-          <option value="4">2016年11月19日</option>
-          <option value="5">2016年11月20日</option>
-          <option value="6">2016年11月21日</option>
-          <option value="7">2016年11月22日</option>
-          <option value="8">2016年11月23日</option>
-          <option value="9">2016年11月24日</option>
-          <option value="10">2016年11月25日</option>
-          <option value="11">2016年11月26日</option>
-          <option value="12">2016年11月27日</option>
-          <option value="13">2016年11月28日</option>
-          <option value="14">2016年11月29日</option>
-              </select>
-
-                お届け希望時間帯：
-                <select name="delivery_hour">
-                          <option value="0">指定なし</option>
-          <option value="1">午前中</option>
-          <option value="2">12時～14時</option>
-          <option value="3">14時～16時</option>
-          <option value="4">16時～18時</option>
-          <option value="5">18時～21時</option>
-              </select>
-                <br />
-                <span style="font-size:11px;">※お届け希望日指定をされてないお客様は最短でのお届けになります。</span><br />
-                <span style="font-size:11px;">※メール便発送での商品は希望日・時間帯の指定は出来ません。</span>
-          -->
-                        ５営業日以内にお届け致します<br>
-            <span style="font-size:10px;">(一部地域によっては異なる場合もございますので、予めご了承ください）</span>
-            </td>
-
-
-        </tr>
-          <!-----------ここからお届け希望日時指定----------->
-
-
-          <!-----------ここから定期商品お届け希望日時指定（定期購入のみ表示）----------->
-        <tr class="hidden_second_day even" style="display: none;">
-            <th>2回目以降のお届け日</th>
-            <td>
-                <div id="month_select_area">
-                    <label><input type="radio" name="month_flag" value="1" checked="" style="background: rgb(255, 255, 255);">お届け月の日付指定：</label>
-                    <select name="second_day" style="background: rgb(255, 255, 255);">
-                        <option value="">指定なし</option>
-        <option value="1D">1</option>
-        <option value="2D">2</option>
-        <option value="3D">3</option>
-        <option value="4D">4</option>
-        <option value="5D">5</option>
-        <option value="6D">6</option>
-        <option value="7D">7</option>
-        <option value="8D">8</option>
-        <option value="9D">9</option>
-        <option value="10D">10</option>
-        <option value="11D">11</option>
-        <option value="12D">12</option>
-        <option value="13D">13</option>
-        <option value="14D">14</option>
-        <option value="15D">15</option>
-        <option value="16D">16</option>
-        <option value="17D">17</option>
-        <option value="18D">18</option>
-        <option value="19D">19</option>
-        <option value="20D">20</option>
-        <option value="21D">21</option>
-        <option value="22D">22</option>
-        <option value="23D">23</option>
-        <option value="24D">24</option>
-        <option value="25D">25</option>
-        <option value="26D">26</option>
-        <option value="27D">27</option>
-                              <option value="END">月末</option>
-                    </select>&nbsp;日
-                    <br>
-                    <label><input type="radio" name="month_flag" value="2" style="background: rgb(255, 255, 255);">お届け月の曜日指定：</label>
-                    <select name="regury_num_w" disabled="disabled" style="background: rgb(239, 239, 239);">
-                        <option value="">▼選択</option>
-                        <option value="1">第1</option>
-                        <option value="2">第2</option>
-                        <option value="3">第3</option>
-                        <option value="4">第4</option>
-                    </select>
-                    <select name="regury_select" disabled="disabled" style="background: rgb(239, 239, 239);">
-                        <option value="">▼選択</option>
-                        <option value="SUN">日</option>
-                        <option value="MON">月</option>
-                        <option value="TUE">火</option>
-                        <option value="WED">水</option>
-                        <option value="THU">木</option>
-                        <option value="FRI">金</option>
-                        <option value="SAT">土</option>
-                    </select>&nbsp;曜日
+    <form id="form-order" method="post" action="/orders/landing/duo/blm500_adcnq_lcr_01_sp#l" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"></div><input type="hidden" name="data[Zwcdb43g2jiv][yf3vvm2j7c8q]" value="0311e1791c1fe92ecd3215fa0472bce6bf2b252d" id="Zwcdb43g2jivYf3vvm2j7c8q">
+
+    <!--<div class="checkbox_wrap">
+    <p class="ttl">当てはまる項目全てにチェックを入れてください。</p>
+
+    <p class="check">
+    <input type="hidden" name="data[CheckBlock][checkbox_age]" id="CheckBlockCheckboxAge_" value="0" /><input type="checkbox" name="data[CheckBlock][checkbox_age]" class="ureru_efo_advanced_honki-check_checkbox" value="1" id="CheckBlockCheckboxAge" /><label for="CheckBlockCheckboxAge">30歳以上の女性の方 <span class="text_red">[必須]</span></label></p>
+    <p class="check">
+    <input type="hidden" name="data[CheckBlock][checkbox_lookingfor]" id="CheckBlockCheckboxLookingfor_" value="0" /><input type="checkbox" name="data[CheckBlock][checkbox_lookingfor]" class="ureru_efo_advanced_honki-check_checkbox" value="1" id="CheckBlockCheckboxLookingfor" /><label for="CheckBlockCheckboxLookingfor">新しいクレンジングをお探しの方 <span class="text_red">[必須]</span></label></p>
+
+    <p class="check">
+    <input type="hidden" name="data[CheckBlock][checkbox_1sttime]" id="CheckBlockCheckbox1sttime_" value="0" /><input type="checkbox" name="data[CheckBlock][checkbox_1sttime]" class="ureru_efo_advanced_honki-check_checkbox" value="1" id="CheckBlockCheckbox1sttime" /><label for="CheckBlockCheckbox1sttime">D.U.O.『ザ クレンジングバーム』を初めてお試しの方 <span class="text_red">[必須]</span></label></p>
+
+    <p class="check">
+    <input type="hidden" name="data[CheckBlock][checkbox_teiki]" id="CheckBlockCheckboxTeiki_" value="0" /><input type="checkbox" name="data[CheckBlock][checkbox_teiki]" class="ureru_efo_advanced_honki-check_checkbox" value="1" id="CheckBlockCheckboxTeiki" /><label for="CheckBlockCheckboxTeiki"><span class="text_red under_line">もし初回半額であれば、D.U.O.『ザ クレンジングバーム』の定期(2880円)に申し込んでもいいという方</span> <span class="text_red">[必須]</span></label></p>
+
+
+    </div>-->
+
+
+    <!-- 申込フォーム -->
+    <div id="form_landing">
+        <h2 id="form_checkout_title" class="form_title">
+            お客様情報
+        </h2>
+
+        <div id="landing_form-wrapper"><div id="efo_required_box" style="display: block; width: 1205px; margin-left: -282.5px; margin-top: 0px; top: 267px;">必須項目：<span id="efo_required_remaining">残り<strong>10</strong>項目</span></div>
+            <div id="landing_form" style="padding-top: 50px;">
+
+                            <div id="input_name" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>お名前</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                              <div class="form_input_box">
+                    <p class="input_label">姓</p>
+                    <input name="data[Order][family_name]" type="text" placeholder="山田" class="ureru_efo ureru_efo_family_name efo_input_border_gray efo_input_glay" id="OrderFamilyName" original-title="">                <p class="input_label">名</p>
+                    <input name="data[Order][given_name]" type="text" placeholder="花子" class="ureru_efo ureru_efo_given_name efo_input_border_gray efo_input_glay" id="OrderGivenName" original-title="">              </div>
+                  <div class="form_example">例）山田 花子</div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_kana" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>ふりがな</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                              <div class="form_input_box">
+                    <p class="input_label">せい</p>
+                    <input name="data[Order][family_kana]" type="text" placeholder="やまだ" class="ureru_efo ureru_efo_family_kana efo_input_border_gray efo_input_glay" id="OrderFamilyKana" original-title="">                <p class="input_label">めい</p>
+                    <input name="data[Order][given_kana]" type="text" placeholder="はなこ" class="ureru_efo ureru_efo_given_kana efo_input_border_gray efo_input_glay" id="OrderGivenKana" original-title="">              </div>
+                  <div class="form_example">例）やまだ はなこ</div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_zip" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>郵便番号</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    〒
+                    &nbsp;
+                    <input name="data[Order][zip1]" type="tel" placeholder="012" class="zip1 ureru_efo ureru_efo_zip1 ureru_efo_zip efo_input_border_gray efo_input_glay" maxlength="3" id="OrderZip1" original-title="">                &nbsp;-&nbsp;
+                    <input name="data[Order][zip2]" type="tel" placeholder="3456" class="zip2 ureru_efo ureru_efo_zip2 ureru_efo_zip efo_input_border_gray efo_input_glay" maxlength="4" id="OrderZip2" original-title="">              </div>
+                  <div class="form_example">例）012-3456</div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_prefecture" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>都道府県</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <select name="data[Order][prefecture]" class="ureru_efo ureru_efo_prefecture efo_input_border_gray efo_input_glay" id="OrderPrefecture" original-title="">
+    <option value="">選択してください</option>
+    <option value="北海道">北海道</option>
+    <option value="青森県">青森県</option>
+    <option value="岩手県">岩手県</option>
+    <option value="宮城県">宮城県</option>
+    <option value="秋田県">秋田県</option>
+    <option value="山形県">山形県</option>
+    <option value="福島県">福島県</option>
+    <option value="茨城県">茨城県</option>
+    <option value="栃木県">栃木県</option>
+    <option value="群馬県">群馬県</option>
+    <option value="埼玉県">埼玉県</option>
+    <option value="千葉県">千葉県</option>
+    <option value="東京都">東京都</option>
+    <option value="神奈川県">神奈川県</option>
+    <option value="新潟県">新潟県</option>
+    <option value="富山県">富山県</option>
+    <option value="石川県">石川県</option>
+    <option value="福井県">福井県</option>
+    <option value="山梨県">山梨県</option>
+    <option value="長野県">長野県</option>
+    <option value="岐阜県">岐阜県</option>
+    <option value="静岡県">静岡県</option>
+    <option value="愛知県">愛知県</option>
+    <option value="三重県">三重県</option>
+    <option value="滋賀県">滋賀県</option>
+    <option value="京都府">京都府</option>
+    <option value="大阪府">大阪府</option>
+    <option value="兵庫県">兵庫県</option>
+    <option value="奈良県">奈良県</option>
+    <option value="和歌山県">和歌山県</option>
+    <option value="鳥取県">鳥取県</option>
+    <option value="島根県">島根県</option>
+    <option value="岡山県">岡山県</option>
+    <option value="広島県">広島県</option>
+    <option value="山口県">山口県</option>
+    <option value="徳島県">徳島県</option>
+    <option value="香川県">香川県</option>
+    <option value="愛媛県">愛媛県</option>
+    <option value="高知県">高知県</option>
+    <option value="福岡県">福岡県</option>
+    <option value="佐賀県">佐賀県</option>
+    <option value="長崎県">長崎県</option>
+    <option value="熊本県">熊本県</option>
+    <option value="大分県">大分県</option>
+    <option value="宮崎県">宮崎県</option>
+    <option value="鹿児島県">鹿児島県</option>
+    <option value="沖縄県">沖縄県</option>
+    </select>              </div>
+                  <div class="form_example"> </div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_address1" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>住所1（市郡区/町・村・丁目・番地）</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <input name="data[Order][address1]" type="text" placeholder="○○市△△区□町1-1" class="address ureru_efo ureru_efo_address1 efo_input_border_gray efo_input_glay" id="OrderAddress1" original-title="">              </div>
+                  <div class="form_example">例）○○市△△区□町1-1</div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_address2" class="form_box">
+                  <p class="form_box_label">
+                    <strong>住所2（マンション名・号室）</strong>
+                                  </p>
+                                <div class="form_input_box">
+                    <input name="data[Order][address2]" type="text" placeholder="○○マンション101号" class="address ureru_efo ureru_efo_address2 efo_input_border_gray efo_input_glay" id="OrderAddress2" original-title="">              </div>
+                  <div class="form_example">例）○○マンション101号</div>
+                </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                <div id="input_tel_no" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>電話番号</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <input name="data[Order][tel_no1]" type="tel" placeholder="03" class="tel_no ureru_efo ureru_efo_tel_no1 efo_input_border_gray efo_input_glay" maxlength="5" id="OrderTelNo1" original-title="">                &nbsp;-&nbsp;
+                    <input name="data[Order][tel_no2]" type="tel" placeholder="0000" class="tel_no ureru_efo ureru_efo_tel_no2 efo_input_border_gray efo_input_glay" maxlength="5" id="OrderTelNo2" original-title="">                &nbsp;-&nbsp;
+                    <input name="data[Order][tel_no3]" type="tel" placeholder="0000" class="tel_no ureru_efo ureru_efo_tel_no3 efo_input_border_gray efo_input_glay" maxlength="5" id="OrderTelNo3" original-title="">              </div>
+                  <div class="form_example">（半角数字） 例）03-0000-0000</div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_email" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>メールアドレス</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <input name="data[Order][email]" type="email" placeholder="○○○@yahoo.co.jp" class="email ureru_efo ureru_efo_email efo_input_border_gray efo_input_glay" id="OrderEmail" original-title="">              </div>
+                  <div class="form_example">（半角英数字） 例）○○○@yahoo.co.jp<p>メールアドレスに誤りがありますと、お客様にメールが届きません。今一度ご確認ください。</p></div>
+                </div>
+                <div id="input_email_confirm" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>メールアドレス（確認）</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <input name="data[Order][email_confirm]" type="email" placeholder="○○○@yahoo.co.jp" class="email ureru_efo ureru_efo_email_confirm efo_input_border_gray efo_input_glay" id="OrderEmailConfirm" original-title="">              </div>
+                  <div class="form_example">（半角英数字） 例）○○○@yahoo.co.jp<p>メールアドレスに誤りがありますと、お客様にメールが届きません。今一度ご確認ください。</p></div>
+                </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div id="input_sex" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>性別</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <input type="hidden" name="data[Order][sex]" id="OrderSex_" value=""><input type="radio" name="data[Order][sex]" id="OrderSex2" class="input_sex ureru_efo ureru_efo_sex" value="2" original-title="" checked="checked"><label for="OrderSex2">女性</label><input type="radio" name="data[Order][sex]" id="OrderSex1" class="input_sex ureru_efo ureru_efo_sex" value="1" original-title=""><label for="OrderSex1">男性</label>                </div>
+                  <div class="form_example"> </div>
+                </div>
+                                                                                                                                                                                                                            <div id="input_birthday" class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>生年月日</strong>
+                                      <span class="form_required">必須</span>
+                                  </p>
+                                <div class="form_input_box">
+                    <input name="data[Order][birthday][year]" type="tel" yearplaceholder="" empty="--" class="input_year ime_disabled efo_input_border_gray efo_input_glay" maxlength="4" id="OrderBirthdayYear" original-title="">&nbsp;/&nbsp;<select name="data[Order][birthday][month]" yearplaceholder="" class="ureru_efo ureru_efo_birthday efo_input_border_gray efo_input_glay" id="OrderBirthdayMonth" original-title="">
+    <option value="">--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    </select>&nbsp;/&nbsp;<select name="data[Order][birthday][day]" yearplaceholder="" class="ureru_efo ureru_efo_birthday efo_input_border_gray efo_input_glay" id="OrderBirthdayDay" original-title="">
+    <option value="">--</option>
+    <option value="01">1</option>
+    <option value="02">2</option>
+    <option value="03">3</option>
+    <option value="04">4</option>
+    <option value="05">5</option>
+    <option value="06">6</option>
+    <option value="07">7</option>
+    <option value="08">8</option>
+    <option value="09">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    </select>              </div>
+                  <div class="form_example">（半角数字）</div>
                 </div>
 
-                <div id="week_select_area">
-                    お届け週の曜日指定：
-                    <select name="week_select" style="background: rgb(255, 255, 255);">
-                        <option value="">▼選択</option>
-                        <option value="SUN">日</option>
-                        <option value="MON">月</option>
-                        <option value="TUE">火</option>
-                        <option value="WED">水</option>
-                        <option value="THU">木</option>
-                        <option value="FRI">金</option>
-                        <option value="SAT">土</option>
-                    </select>&nbsp;曜日
-                </div>
-
-                <span style="font-size:11px;">※2回目以降のお届け日選択をされてないお客様は最短日基準でのお届けになります。</span>
-
-            </td>
-        </tr>
-          <!-----------ここまで定期商品お届け希望日時指定（定期購入のみ表示）----------->
-
-          <!------------------------- クーポン機能　オプション申込み ----------------------------->
-          <input type="hidden" name="menuCoupon" value="0" style="background: rgb(255, 255, 255);">
-          <!------------------------- クーポン機能　オプション申込み ----------------------------->
-
-
-
-          <!-----------ここから備考欄----------->
-        <tr class="even">
-            <th>その他ご要望など</th>
-            <td style="padding-bottom:5px;">
-                <textarea cols="50" rows="5" name="bikou" style="background: rgb(255, 255, 255);"></textarea>
-            </td>
-        </tr>
-          <!-----------ここまで備考欄----------->
-
-          <!-----------ここからアンケート欄　オプション申込み----------->
-                  </tbody><tbody class="free_area"></tbody>
-          <!-----------ここからアンケート欄　オプション申込み----------->
-
-
-          <!-----------ここからプライバシーポリシーチェック欄----------->
-        <tbody><tr class="odd">
-            <th>
-                プライバシーポリシー
-            </th>
-            <td>
-              <div id="privacy_box" style="height:140px; overflow:scroll; overflow-x: hidden; border:solid 2px #CCC; padding:5px;">
-        <dl>
-        <dt style="border-bottom:solid 1px;">はじめに</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">株式会社リーフ（以下、「弊社」という）は、弊社が提供する各種サービス（以下、「本サービス」といいます。）における、会員の大切な個人情報の取扱いについて、以下のとおりプライバシーポリシーを定め、その保護に万全を尽くします。</dd>
-        <dt style="border-bottom:solid 1px;">第1条　個人情報の定義</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">個人情報とは、個人に関する情報のうち、氏名、生年月日、電話番号、住所、電子メールアドレスなど、特定の個人を識別することができる情報（当該情報だけでは特定の個人を識別できなくても、ほかの情報と容易に照合することができ、それにより特定の個人を識別できるものを含みます。）をいいます。</dd>
-        <dt style="border-bottom:solid 1px;">第2条　クッキー・ＩＰアドレス情報・端末識別番号等</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">1　クッキー・ＩＰアドレス情報・端末識別番号等については、当該情報単独で特定の個人を識別することができないため、弊社では、個人情報とは認識していません。ただし、当該情報が個人情報と一体となって使用される場合には、当該情報も特定の個人を識別できるため個人情報とみなします。
-          2　本サービスでは、広告配信事業者が提供するプログラムを利用し、特定のウェブサイトにおいて行動ターゲティング広告（ウェブサイト閲覧情報などを元に、会員の興味・関心にあわせて広告を配信する広告手法）を行っております。 その際、会員のウェブサイト訪問履歴情報を採取するため、クッキーを使用しています（ただし、個人を特定・識別できるような情報は、一切含まれておりません。）。広告配信事業者は 当該クッキーを使用して、ウェブサイトへの過去のアクセス情報に基づいて広告を配信します。この広告の無効化を希望される会員は 広告配信事業者のオプトアウトページにアクセスして、クッキーの使用を無効にしてください。ただし、その場合、本サービスの一部の機能を利用できなくなる可能性があります。</dd>
-        <dt style="border-bottom:solid 1px;">第3条　個人情報の取得</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">弊社は、弊社が本サービスを提供するために必要な範囲で、会員から提供して頂く方法又は会員が本サービスを利用するにあたって弊社が収集する方法によって、会員の個人情報を取得します。弊社は、適正に個人情報を取得し、偽り及びその他不正な手段等により個人情報を取得することはありません。</dd>
-        <dt style="border-bottom:solid 1px;">第4条　個人情報の利用目的</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">弊社は、取得した会員の個人情報を、以下の利用目的で、又は当該利用目的の達成に必要な範囲で、利用をします。万一、利用目的の変更が必要となった場合には、その旨を会員に通知又は公表します。
-          （1）本サービスに関する登録の受付、本人確認等、商品の発送、本サービスの提供、維持、保護及び改善のため
-          （2）本サービスの内容に関する情報、アップデート情報、イベント・キャンペーン情報、規約等の変更情報等の告知のため
-          （3）本サービスに関するご案内、お問い合せ等への対応のため
-          （4）本サービスに関する弊社の規約、その他諸規程に違反する行為への対応のため
-          （5）本サービスの利用に関する統計データを作成するため
-          （6）本サービスのアンケートの収集又はモニター調査のため
-          （7）今後の本サービスに関する企画、立案又は実施のため
-          （8）弊社又は第三者の広告の配信又は表示のため
-          （9）キャンペーン等に当選された会員に賞品等を発送するため
-          （10）その他マーケティングに利用するため
-          （11）弊社従業員の採用活動のため</dd>
-        <dt style="border-bottom:solid 1px;">第5条　取得した個人情報の第三者提供、預託及び共同利用</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">1　弊社は、会員から取得した個人情報を、下記の場合を除き、第三者に提供することはありません。
-          （1）会員が同意した場合
-          （2）会員が弊社の規約に違反し、弊社の権利、財産やサービスなどを保護するために、個人情報を公開せざるをえないと判断するに足る十分な根拠がある場合
-          （3）人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難である場合
-          （4）国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、会員の同意を得ることによって当該事務の遂行に支障を及ぼすおそれがある場合
-          （5）合併、会社分割、事業譲渡その他の事由によって個人情報の提供を含む弊社の事業の承継が行われる場合
-          （6）個人情報保護法その他の法令で認められる場合
-          2　弊社は、利用目的の達成に必要な範囲内において、個人情報の取扱いの全部又は一部を、業務委託先に預託することがあります。その際、業務委託先としての適格性を十分審査するとともに、契約にあたって守秘義務に関する事項等を規定し、情報が適正に管理される体制作りを行います。
-          3　今後、会員に本サービスを提供するにあたり、弊社と共同して業務を行うビジネスパートナーが必要な場合には、会員の個人情報をそのビジネスパートナーと共同利用することがあります。この場合に弊社は、利用目的、ビジネスパートナーの名称、情報の種類、管理者の名称について、会員に公表した上で共同利用することとします。</dd>
-        <dt style="border-bottom:solid 1px;">第6条　個人情報の開示、訂正及び利用停止等</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">1　弊社は、会員から、個人情報保護法の定めに基づき個人情報の開示を求められた場合には、個人情報保護法により弊社が開示の義務がある場合に限り、会員ご本人からの請求であることを確認の上で、遅滞なく個人情報の開示を行います。なお、個人情報の開示にあたっては、弊社が別途定める手続きに従って開示手数料をお支払い頂く場合があります。
-          2　弊社は、会員から、（１）個人情報が真実でないという理由によって個人情報保護法の定めに基づきその内容の訂正を求められた場合、及び（２）予め公表された利用目的の範囲を超えて取り扱われているという理由又は偽りその他不正の手段により収集されたものであるという理由によって個人情報保護法の定めに基づきその利用の停止を求められた場合には、会員ご本人からの請求であることを確認の上で、遅滞なく必要な調査を行い、その結果に基づき、個人情報の内容の訂正又は利用停止を行い、会員に対してその旨を通知します。
-          3　弊社は、会員から、会員の個人情報について消去を求められた場合には、弊社が当該請求に応じる必要があると判断した場合に限り、会員ご本人からの請求であることを確認の上で、遅滞なく個人情報の消去を行い、会員に対してその旨を通知します。
-          4　前各項の請求に際しては、以下の内容その他弊社所定の情報・資料を送付してください。
-          （1）氏名・住所・電話番号・メールアドレス
-          （2）請求内容・経緯・根拠資料
-          （3）本人確認資料
-          5　以下の各号のいずれかに該当する場合は、第１項及び第２項の請求に応じることができない場合があります。その際は、会員に対してその旨を通知すると共に、理由を説明します。
-          （1）会員又は第三者の生命、身体、財産その他の権利利益を害するおそれがある場合
-          （2）弊社の業務の適正な実施に著しい支障を及ぼすおそれがある場合
-          （3）法令に違反することとなる場合
-          （4）会員ご本人からの請求であることが確認できない場合</dd>
-        <dt style="border-bottom:solid 1px;">第7条　リンク</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">弊社のウェブサイトからリンクされている弊社以外の事業者が、そのウェブサイト上で個人情報の取得を行う場合がありますが、その際には本プライバシーポリシーは適用されることはなく、弊社は弊社以外の事業者が個人情報を取り扱うことに関し、なんら義務や責任を負いません。</dd>
-        <dt style="border-bottom:solid 1px;">第8条　問い合わせ窓口</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">本プライバシーポリシーに対するご意見、ご質問、その他個人情報の取り扱いに関するお問い合わせ及び第6条に基づくご請求は、下記よりご連絡ください。
-          ■問合せ窓口
-          TEL：050−5578-3910
-          E-mail：customer@beauty-leaf.jp
-          住所　：福岡県福岡市中央区天神5−5−19　5F</dd>
-        <dt style="border-bottom:solid 1px;">第9条　改訂</dt>
-        <dd style="margin:0; padding:5px 5px 10px; font-size:12px;">本プライバシーポリシーを改訂する場合は、改訂日及び改訂内容を速やかに弊社のウェブサイト上で告知します。
-
-          以上
-          2015年2月25日制定</dd>
-                              </dl>
-
-                </div>
-
-                <input style="margin: 15px; background: rgb(255, 255, 255);" type="checkbox" name="privacy" value="1" checked="checked" id="privacy"><label for="privacy">同意する</label>
-            </td>
-        </tr>
-          <!-----------ここまでプライバシーポリシーチェック欄----------->
-
-          <!-----------ここから申込みボタン----------->
-        <tr class="even">
-            <td class="submit-btn" colspan="2" style="text-align:center;">
-                <img src="assets/images/form_btn.png" onmouseover="this.src='assets/images/form_btn_on.png'" onmouseout="this.src='assets/images/form_btn.png'" name="sub" value="申し込む" id="sub">
-            </td>
-        </tr>
-          <!-----------ここまで申込みボタン----------->
-
-                              </tbody></table>
-          <!------------------------------------ここまで3つ目の入力フォームエリア-------------------------------------->
-                          </div>
+    <!-- お支払い方法 -->
+                <div class="form_box form_required">
+                  <p class="form_box_label">
+                    <strong>お支払い方法</strong>
+                    <span class="form_required">必須</span>
+                  </p>
+                  <div class="form_input_box">
+                                <div id="form_payment_method_select">
+            <select name="data[Order][payment_method]" id="form-payment-method">
+    <option value="np_wiz">コンビニ後払い</option>
+    <option value="credit">クレジットカード</option>
+    </select>    </div>
+                                    <div id="form_payment_method_credit" style="display: none;">
+        <div id="form_payment_method_credit-card_name" class="credit_box">
+            <div class="credit_title">カードの名義人</div>
+                    <div class="credit_input"><input name="data[Order][card_name]" type="text" class="ime_disabled ureru_efo_card_name" id="OrderCardName" original-title=""></div>
+            <div class="credit_example">※「HANAKO YAMADA」のように、カードの表示どおりご入力ください。</div>
+        </div>
+        <div id="form_payment_method_credit-card_no" class="credit_box">
+            <div class="credit_title">クレジット番号</div>
+                    <div class="credit_input"><input name="data[Order][card_no]" type="tel" class="ime_disabled ureru_efo_card_no" maxlength="16" id="OrderCardNo" original-title=""></div>
+            <div class="credit_example">※数字のみで続けて入力してください。</div>
+        </div>
+        <div id="form_payment_method_credit-card_date" class="credit_box">
+            <div class="credit_title">カードの有効期限</div>
+                    <div class="credit_input">
+                <input name="data[Order][card_month]" type="tel" class="card_date ime_disabled ureru_efo_card_month" maxlength="2" id="OrderCardMonth" original-title="">            月
+                &nbsp;
+                <input name="data[Order][card_year]" type="tel" class="card_date ime_disabled ureru_efo_card_year" maxlength="2" id="OrderCardYear" original-title="">            年
+            </div>
+            <div class="credit_example">※カードの表記通りご記入ください。<br>
+                カードの有効期限は通常「月/年(西暦2桁)」で、カードに刻印されています。<br>
+                例)カードの表記03/18→03月/18年</div>
+        </div>
+    </div>
                       </div>
+                </div>
+    <!-- /お支払い方法 -->
+            </div>
+        </div>
 
+        <div id="agreement">
+                <table cellspacing="0" summary=" ">
+            <tbody><tr>
+              <td class="agreement_check"><input type="hidden" name="data[Order][agreement]" id="OrderAgreement_" value="0"><input type="checkbox" name="data[Order][agreement]" class="ureru_efo_agreement" value="1" id="OrderAgreement" original-title=""></td>
+              <td class="agreement_label">
+                              <strong><a href="/orders/agreement/duo/blm500_adcnq_lcr_01_sp" class="popup-page">個人情報規約</a><label for="OrderAgreement">に同意して申込みます。</label></strong>
+                            <span class="form_notice">必須</span>
+              </td>
+            </tr>
+          </tbody></table>
+                <table cellspacing="0" summary=" ">
+            <tbody><tr>
+              <td class="agreement_check"><input type="hidden" name="data[Order][mail_optin_flg]" id="OrderMailOptinFlg_" value="0"><input type="checkbox" name="data[Order][mail_optin_flg]" class="ureru_efo_mail_optin_flg" value="1" id="OrderMailOptinFlg" checked="checked" original-title=""></td>
+              <td class="agreement_label">
+                <strong><label onclick="" for="OrderMailOptinFlg">D.U.O.からのお得な情報を受け取る</label></strong>
+                              <span class="form_notice">必須</span>
+                          </td>
+            </tr>
+          </tbody></table>
+        </div>
+    </div>
 
+    <input type="submit" value="お申し込み" id="form_btn">
 
-        <input type="hidden" request_select="2" name="reg_select[]" item_id="8" value="8_reg" reg_name="【定期ｺｰｽ】初回0円 Beautyﾌｫﾙｽｺﾘｰ235" style="background: rgb(255, 255, 255);">
-
-        <input type="hidden" request_select="0" name="normal_select[]" item_id="3" value="3" reg_name="【単品】通常4,980円Beautyフォルスコリー235" style="background: rgb(255, 255, 255);">
-
-
-
-
-
-                      <input type="hidden" class="reg_num" name="reg_num" value="" style="background: rgb(255, 255, 255);">
-                      <input type="hidden" class="p_reg_val" name="p_reg_val" value="" style="background: rgb(255, 255, 255);">
-                      <input type="hidden" name="ticket" value="20161113172239" style="background: rgb(255, 255, 255);">
-                      <input type="hidden" name="img_dir" id="img_dir" value="/themes/simple_02/p/images" style="background: rgb(255, 255, 255);">
-                      <input type="hidden" name="reg_pase_hidden" id="reg_pase_hidden" value="" style="background: rgb(255, 255, 255);">
-                      <input type="hidden" name="hidden_payment" id="hidden_payment" value="0" style="background: rgb(255, 255, 255);">
-                      <input type="hidden" name="routing" value="16" style="background: rgb(255, 255, 255);">
-                  </form>
-                  <!-- 定期購入の場合のソース-->
-                  </div>
-
-              </div>
+    <!-- フォーム終了タグ -->
+</form>
 
 </section>
