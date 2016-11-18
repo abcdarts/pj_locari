@@ -204,11 +204,10 @@ img{
 
 			.link-btn{
 				width: 94%;
-				margin: 0 auto 8px;
+				margin: -36% auto 0;
 
 				a{
 					display: block;
-					background: #ff4c00;
 					color: #fff;
 					font-size: 17px;
 					text-align: center;
@@ -227,8 +226,14 @@ img{
     #form_landing {
     	width: 640px;
     	margin: 30px auto;
+        font-size: 13px;
+        line-height: 1.3em;
     	background-color:#ffffff;
     	text-align:left;
+
+        p{
+            margin-bottom: 0;
+        }
     }
 
     /* フォームタイトル */
@@ -469,7 +474,7 @@ img{
     		width: 80%;
     		height: auto;
     		margin: 0 auto;
-    		padding: 30px 0 30px 400px;
+    		padding: 30px 0 30px 350px;
     		background: url(../images/main_img_00.png) no-repeat left center;
             background-size: contain;
     		color: #e9585d;
@@ -507,65 +512,231 @@ img{
             width: 100%;
         }
 
-        #teiki1{
-    		width: 100%;
-    		margin:0 auto;
-    		font-size:14px;
-    		text-align:left;
-    	}
+        #form_landing {
+            width: 100%;
+            margin: 15px auto;
+            background-color:#ffffff;
+            text-align:left;
+        }
 
-    	.form_ttl{
-    		margin:25px 0 0px;
-    		font-weight:bold;
-    		color:#fff;
-    		font-size:17px;
-    		text-align:left;
-    		padding:8px;
-    	}
+        /* フォームタイトル */
+        h2#form_checkout_title {
+            background-color: #f6dbdb;
+            border-left: 5px solid #a0131a;
+            color: #fffff;
+            font-weight:bold;
+            font-size: 16px;
+            padding: 8px 8px 8px 15px;
+            margin: 0 0 15px;
+        }
 
-    	#itemselect,.mgnt20,.mgnt10{
-    		width: 100%;
-    	}
+        /* お支払い方法タイトル */
+        h2#form_payment_title {
+            background-color: #f6dbdb;
+            border-left: 5px solid #a0131a;
+            color: #fffff;
+            font-weight:bold;
+            font-size: 16px;
+            padding: 8px 8px 8px 15px;
+            margin: 40px 0 0 0;
+        }
 
-    	#teiki1 th{
-    		padding: 12px 2% 12px 2%;
-    		width: 28%;
-            vertical-align: top;
-    		}
-    	#teiki1 td{
-            vertical-align: top;
-    		padding:12px 2% 12px 2%;
-    		color:#222;
-            width: 64%;
+        /* 数量選択 */
+        table#product_qty {
+            width: 100%;
+            height: 100px;
+            border-collapse: collapse;
+            border: 1px solid #C3C3C3;
+            margin: 0 0 30px;
+         }
 
-            span{
-                display: block;
+        #product_qty tr {
+            border-bottom: 1px solid #C3C3C3;
+            line-height: 18px;
+            text-align:left;
+         }
 
-                &.small_txt{
-                    font-size: 12px;
-                }
-            }
+        #product_qty th {
+            padding: 5px;
+            border-right: 1px solid #C3C3C3;
+            background-color: #eeeeee;
+         }
 
-            textarea{
-                width: 90%;
-                border: 1px solid #ccc;
-            }
-    	}
-    	#itemselect,.mgnt20,.mgnt10{
-    		margin-bottom:25px;
-    		}
-    	.hissu{
-    		font-size:12px;
-    		float:right;
-    		margin-right:5px;
-    		padding:2px 3px;
-    	}
+        #product_qty td {
+            padding: 5px;
+            width: 50%;
+         }
 
-        .submit-btn{
-            img{
-                width: 100px;
-                height: 25px;
-            }
+         /* 申し込むフォーム */
+
+         #form_checkout_message {
+            width: 100%;
+             text-align: left;
+         }
+
+        #landing_form {
+            width: 100%;
+            border-top: 1px solid #C3C3C3;
+            border-left: 1px solid #C3C3C3;
+            border-right: 1px solid #C3C3C3;
+            border-bottom: none;
+        }
+
+        .form_box{
+            display: block;
+            border-bottom: 1px solid #C3C3C3;
+        }
+
+        .form_box_label {
+            width: 100%;
+            padding: 10px 5px;
+            border-right: none;
+            background-color: #eeeeee;
+            box-sizing: border-box;
+        }
+
+        .form_box_label span.form_required{
+            margin:0 0 0 5px;
+        }
+
+        .form_input_box {
+            padding: 8px 5px;
+            border-bottom: 1px solid #c3c3c3;
+        }
+
+        .form_example{
+            padding: 8px 5px;
+        }
+
+        .form_input_box p{
+            display:inline;
+        }
+        .form_input_box input, .form_input_box select{
+            display:inline;
+            border: 1px solid #c3c3c3;
+        }
+
+        .form_example p{
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 10px;
+        }
+
+
+        /*個別変更*/
+
+        .ureru_efo_family_name,
+        .ureru_efo_given_name,
+        .ureru_efo_family_kana,
+        .ureru_efo_given_kana {
+          width: 9em;
+        }
+
+        .form_input_box p.form_cap{
+            font-size:12px;
+        }
+
+        .credit_box{
+            display: -webkit-flexbox;
+            display: -moz-flexbox;
+            display: -ms-flexbox;
+            display: -o-flexbox;
+            display:flex;
+            flex-flow: column wrap;
+        }
+
+        .credit_title{
+            font-weight:bold;
+            margin:0 5px 0 0;
+        }
+
+
+
+
+
+
+        #form_payment_method_select {
+            margin: 10px 10px 10px 10px;
+            padding-left: 5px;
+         }
+
+         input.tel_no {
+          width: 4em;
+        }
+
+        input#OrderBirthdayYear {
+          width: 4em;
+        }
+
+        input.zip1 {
+          width: 3em;
+        }
+
+        input.zip2 {
+          width: 4em;
+        }
+
+        input.email {
+          width: 14em;
+        }
+
+        span.form_required {
+          color: #a0131a;
+        }
+
+        #OrderSex1 {
+            margin: 0 0 0 10px;
+        }
+
+        #form_payment_method_credit_form table tr th {
+            text-align:left;
+        }
+
+
+         /* 申し込むフォーム同意 */
+        #agreement {
+          clear: both;
+          width: 100%;
+          box-sizing: border-box;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          background-color: #EEEEEE;
+        }
+
+        #agreement .form_notice {
+          color: #a0131a;
+          font-weight:bold;
+        }
+
+         /* 申し込むフォームボタン */
+         input#form_btn {
+            background:url(../images/btn-lp-off.gif) no-repeat 0 0;
+            background-size:100% auto;
+            width:60%;
+            height: 0;
+            padding-top: 17.18%;
+            border:none;
+            text-indent:-9999px;
+            display:block;
+            margin: 0 auto;
+            cursor:pointer;
+        }
+
+        .error-message {
+            color: #cc0000;
+        }
+
+
+
+        #confirm_button_disable {
+            margin: 0 auto;
+            text-align:center;
+            width: 640px;
+        }
+
+        #confirm_button_disable img{
+            width: 370px;
+            height:auto;
         }
     }
 }
@@ -593,7 +764,7 @@ img{
 			background: none;
 
 			h2{
-				font-size: 18px;
+				font-size: 17px;
 			}
 
 			p{
@@ -704,6 +875,234 @@ img{
     				}
     			}
     		}
+
+            #form_landing {
+            	width: 100%;
+            	margin: 15px auto;
+            	background-color:#ffffff;
+            	text-align:left;
+            }
+
+            /* フォームタイトル */
+            h2#form_checkout_title {
+            	background-color: #f6dbdb;
+            	border-left: 5px solid #a0131a;
+            	color: #fffff;
+            	font-weight:bold;
+            	font-size: 16px;
+            	padding: 8px 8px 8px 15px;
+            	margin: 0 0 15px;
+            }
+
+            /* お支払い方法タイトル */
+            h2#form_payment_title {
+            	background-color: #f6dbdb;
+            	border-left: 5px solid #a0131a;
+            	color: #fffff;
+            	font-weight:bold;
+            	font-size: 16px;
+            	padding: 8px 8px 8px 15px;
+            	margin: 40px 0 0 0;
+            }
+
+            /* 数量選択 */
+            table#product_qty {
+            	width: 100%;
+                height: 100px;
+                border-collapse: collapse;
+                border: 1px solid #C3C3C3;
+            	margin: 0 0 30px;
+             }
+
+            #product_qty tr {
+                border-bottom: 1px solid #C3C3C3;
+                line-height: 18px;
+            	text-align:left;
+             }
+
+            #product_qty th {
+                padding: 5px;
+                border-right: 1px solid #C3C3C3;
+                background-color: #eeeeee;
+             }
+
+            #product_qty td {
+                padding: 5px;
+                width: 50%;
+             }
+
+             /* 申し込むフォーム */
+
+             #form_checkout_message {
+            	width: 100%;
+                 text-align: left;
+             }
+
+            #landing_form {
+            	width: 100%;
+                border-top: 1px solid #C3C3C3;
+                border-left: 1px solid #C3C3C3;
+                border-right: 1px solid #C3C3C3;
+                border-bottom: none;
+            }
+
+            .form_box{
+                display: block;
+                border-bottom: 1px solid #C3C3C3;
+            }
+
+            .form_box_label {
+            	width: 100%;
+                padding: 10px 5px;
+                border-right: none;
+                background-color: #eeeeee;
+                box-sizing: border-box;
+            }
+
+            .form_box_label span.form_required{
+            	margin:0 0 0 5px;
+            }
+
+            .form_input_box {
+                padding: 8px 5px;
+                border-bottom: 1px solid #c3c3c3;
+            }
+
+            .form_example{
+                padding: 8px 5px;
+            }
+
+            .form_input_box p{
+                display:inline;
+            }
+            .form_input_box input, .form_input_box select{
+            	display:inline;
+                border: 1px solid #c3c3c3;
+            }
+
+            .form_example p{
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 10px;
+            }
+
+
+            /*個別変更*/
+
+            .ureru_efo_family_name,
+            .ureru_efo_given_name,
+            .ureru_efo_family_kana,
+            .ureru_efo_given_kana {
+              width: 9em;
+            }
+
+            .form_input_box p.form_cap{
+            	font-size:12px;
+            }
+
+            .credit_box{
+            	display: -webkit-flexbox;
+                display: -moz-flexbox;
+                display: -ms-flexbox;
+                display: -o-flexbox;
+            	display:flex;
+            	flex-flow: column wrap;
+            }
+
+            .credit_title{
+            	font-weight:bold;
+            	margin:0 5px 0 0;
+            }
+
+
+
+
+
+
+            #form_payment_method_select {
+                margin: 10px 10px 10px 10px;
+                padding-left: 5px;
+             }
+
+             input.tel_no {
+              width: 4em;
+            }
+
+            input#OrderBirthdayYear {
+              width: 4em;
+            }
+
+            input.zip1 {
+              width: 3em;
+            }
+
+            input.zip2 {
+              width: 4em;
+            }
+
+            input.email {
+              width: 14em;
+            }
+
+            span.form_required {
+              color: #a0131a;
+            }
+
+            #OrderSex1 {
+            	margin: 0 0 0 10px;
+            }
+
+            #form_payment_method_credit_form table tr th {
+            	text-align:left;
+            }
+
+
+             /* 申し込むフォーム同意 */
+            #agreement {
+              clear: both;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 10px;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              background-color: #EEEEEE;
+            }
+
+            #agreement .form_notice {
+              color: #a0131a;
+              font-weight:bold;
+            }
+
+             /* 申し込むフォームボタン */
+             input#form_btn {
+            	background:url(../images/btn-lp-off.gif) no-repeat 0 0;
+                background-size:100% auto;
+            	width:60%;
+            	height: 0;
+                padding-top: 17.18%;
+            	border:none;
+            	text-indent:-9999px;
+            	display:block;
+            	margin: 0 auto;
+            	cursor:pointer;
+            }
+
+            .error-message {
+            	color: #cc0000;
+            }
+
+
+
+            #confirm_button_disable {
+            	margin: 0 auto;
+            	text-align:center;
+            	width: 640px;
+            }
+
+            #confirm_button_disable img{
+            	width: 370px;
+            	height:auto;
+            }
     	}
 
 
@@ -727,11 +1126,9 @@ img{
 
     				a{
     					display: block;
-    					background: #ff4c00;
     					color: #fff;
     					font-size: 17px;
     					text-align: center;
-    					padding: 10px 0;
 
     					&:hover{
     						text-decoration: none;
@@ -744,238 +1141,6 @@ img{
     			margin-top: 9px;
     		}
     	}
-    }
-
-
-    #form_landing {
-    	width: 640px;
-    	margin: 30px auto;
-    	background-color:#ffffff;
-    	text-align:left;
-    }
-
-    /* フォームタイトル */
-    h2#form_checkout_title {
-    	background-color: #f6dbdb;
-    	border-left: 5px solid #a0131a;
-    	color: #fffff;
-    	font-weight:bold;
-    	font-size: 16px;
-    	padding: 8px 8px 8px 15px;
-    	margin: 0 0 15px;
-    }
-
-    /* お支払い方法タイトル */
-    h2#form_payment_title {
-    	background-color: #f6dbdb;
-    	border-left: 5px solid #a0131a;
-    	color: #fffff;
-    	font-weight:bold;
-    	font-size: 16px;
-    	padding: 8px 8px 8px 15px;
-    	margin: 40px 0 0 0;
-    }
-
-    /* 数量選択 */
-    table#product_qty {
-    	width: 640px;
-        height: 100px;
-        border-collapse: collapse;
-        border: 1px solid #C3C3C3;
-    	margin: 0 0 30px;
-     }
-
-    #product_qty tr {
-        border-bottom: 1px solid #C3C3C3;
-        line-height: 18px;
-    	text-align:left;
-     }
-
-    #product_qty th {
-        padding: 5px;
-        border-right: 1px solid #C3C3C3;
-        background-color: #eeeeee;
-     }
-
-    #product_qty td {
-        padding: 5px;
-        width: 550px;
-     }
-
-     /* 申し込むフォーム */
-
-     #form_checkout_message {
-    	width: 640px;
-         text-align: left;
-     }
-
-    #landing_form {
-    	width: 638px;
-        border-top: 1px solid #C3C3C3;
-        border-left: 1px solid #C3C3C3;
-        border-right: 1px solid #C3C3C3;
-        border-bottom: none;
-    }
-
-    .form_box{
-    	display: -webkit-flexbox;
-        display: -moz-flexbox;
-        display: -o-flexbox;
-    	display: -webkit-box;/*--- Androidブラウザ用 ---*/
-        display: -ms-flexbox;/*--- IE10 ---*/
-        display: -webkit-flex;/*--- safari（PC）用 ---*/
-        display: flex;
-        -ms-flex-flow: row;/*--- IE10用 ---*/
-        -webkit-flow: row;/*--- safari（PC）用 ---*/
-    	flex-flow: row;
-    	-webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
-    	align-items: center; /* 縦方向中央揃え */
-        border-bottom: 1px solid #C3C3C3;
-    }
-
-    .form_box_label {
-    	width:180px;
-        padding: 20px 5px;
-        border-right: 1px solid #C3C3C3;
-        background-color: #eeeeee;
-    	-ms-flex-flex-item-align: stretch;/*--- IE10 ---*/
-    	-webkit-align-self: stretch;/*--- safari（PC）用 ---*/
-    	align-self: stretch;
-    }
-
-    .form_box_label span.form_required{
-    	margin:0 0 0 5px;
-    }
-
-    .form_input_box {
-        padding: 15px 5px;
-    }
-
-    .form_input_box p,
-    .form_input_box input{
-    	display:inline;
-    }
-
-    .form_example p{
-    	width:200px;
-    	font-size:10px;
-    }
-
-
-    /*個別変更*/
-
-    .ureru_efo_family_name,
-    .ureru_efo_given_name,
-    .ureru_efo_family_kana,
-    .ureru_efo_given_kana {
-      width: 9em;
-    }
-
-    .form_input_box p.form_cap{
-    	font-size:12px;
-    }
-
-    .credit_box{
-    	display: -webkit-flexbox;
-        display: -moz-flexbox;
-        display: -ms-flexbox;
-        display: -o-flexbox;
-    	display:flex;
-    	flex-flow: column wrap;
-    }
-
-    .credit_title{
-    	font-weight:bold;
-    	margin:0 5px 0 0;
-    }
-
-
-
-
-
-
-    #form_payment_method_select {
-        margin: 10px 10px 10px 10px;
-        padding-left: 5px;
-     }
-
-     input.tel_no {
-      width: 4em;
-    }
-
-    input#OrderBirthdayYear {
-      width: 4em;
-    }
-
-    input.zip1 {
-      width: 3em;
-    }
-
-    input.zip2 {
-      width: 4em;
-    }
-
-    input.email {
-      width: 14em;
-    }
-
-    span.form_required {
-      color: #a0131a;
-    }
-
-    #OrderSex1 {
-    	margin: 0 0 0 10px;
-    }
-
-    #form_payment_method_credit_form table tr th {
-    	text-align:left;
-    }
-
-
-     /* 申し込むフォーム同意 */
-    #agreement {
-      clear: both;
-      width: 620px;
-      padding: 10px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      background-color: #EEEEEE;
-    }
-
-    #agreement .form_notice {
-      color: #a0131a;
-      font-weight:bold;
-    }
-
-     /* 申し込むフォームボタン */
-     input#form_btn {
-    	background:url(../images/btn-lp-off.gif) no-repeat 0 0;
-        background-size:100% auto;
-    	width:60%;
-    	height: 0;
-        padding-top: 17.18%;
-    	border:none;
-    	text-indent:-9999px;
-    	display:block;
-    	margin: 0 auto;
-    	cursor:pointer;
-    }
-
-    .error-message {
-    	color: #cc0000;
-    }
-
-
-
-    #confirm_button_disable {
-    	margin: 0 auto;
-    	text-align:center;
-    	width: 640px;
-    }
-
-    #confirm_button_disable img{
-    	width: 370px;
-    	height:auto;
     }
 
 }
