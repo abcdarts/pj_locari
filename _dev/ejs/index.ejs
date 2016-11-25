@@ -28,9 +28,14 @@
         <div class="course">
           <p class="pc_view"><img src="./assets/images/lnav_img_01.png" alt=""></p>
           <p class="sp_view"><img src="./assets/images/sp_lnav_img_01.png" alt=""></p>
-          <div class="link-btn">
-            <a href="#">
+          <div class="link-btn pc_view">
+            <a href="#form_landing">
               <img src="./assets/images/lnav_img_02.png" alt="今すぐお得に試す！">
+            </a>
+          </div>
+          <div class="link-btn sp_view">
+            <a href="#form_landing">
+              <img src="./assets/images/sp_lnav_btn_01.png" alt="今すぐお得に試す！">
             </a>
           </div>
         </div>
@@ -120,6 +125,26 @@
       </section>
 
       <% include parts/_mailForm %>
+
+      <script>
+        $(function(){
+          $("a[href^=#]").click(function(e){
+              e.preventDefault();
+              var target =$($(this).attr("href")).offset().top - 15;
+              //fixed要素がある場合などは値をマイナスして調整
+              $('html,body').animate(
+                  {
+                      scrollTop:target
+                  },
+                  {
+                      duration: 'slow',
+                      easing: 'swing'
+                  }
+              );
+              return(false);
+          })
+        });
+      </script>
 
     </div><!-- /.main_content -->
 
