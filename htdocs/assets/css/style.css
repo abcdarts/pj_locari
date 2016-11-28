@@ -247,14 +247,15 @@ img {
   margin-top: 9px;
 }
 
-.container #teiki1 {
-  width: 674px;
+#teiki1 {
+  width: 90%;
+  max-width: 1034px;
   margin: 0 auto;
   font-size: 14px;
   text-align: left;
 }
 
-.container .form_ttl {
+.form_ttl {
   margin: 25px 0 0px;
   font-weight: bold;
   color: #fff;
@@ -278,11 +279,12 @@ img {
   /* IE6-8 */
 }
 
-.container #itemselect, .container .mgnt20, .container .mgnt10 {
-  width: 674px;
+#itemselect, .mgnt20, .mgnt10 {
+  width: 100%;
+  max-width: 1034px;
 }
 
-.container #teiki1 th {
+#teiki1 th {
   background: #FFF1B2;
   border-bottom: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
@@ -290,7 +292,7 @@ img {
   width: 240px;
 }
 
-.container #teiki1 td {
+#teiki1 td {
   background: #fff;
   border-bottom: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
@@ -298,13 +300,13 @@ img {
   color: #222;
 }
 
-.container #itemselect, .container .mgnt20, .container .mgnt10 {
+#itemselect, .mgnt20, .mgnt10 {
   border-left: 1px solid #CCCCCC;
   border-top: 1px solid #CCCCCC;
   margin-bottom: 25px;
 }
 
-.container .hissu {
+.hissu {
   font-size: 12px;
   background: #ff0000;
   color: #fff;
@@ -322,10 +324,10 @@ img {
     margin-bottom: 15px;
   }
   .main_area .inner {
-    width: 80%;
+    width: 60%;
     height: auto;
     margin: 0 auto;
-    padding: 30px 0 30px 400px;
+    padding: 30px 0 30px 40%;
     background: url(../images/main_img_00.png) no-repeat left center;
     background-size: contain;
     color: #00702d;
@@ -370,39 +372,46 @@ img {
   .container #itemselect, .container .mgnt20, .container .mgnt10 {
     width: 100%;
   }
-  .container #teiki1 th {
+  #teiki1 th {
     padding: 12px 2% 12px 2%;
     width: 28%;
     vertical-align: top;
   }
-  .container #teiki1 td {
+  #teiki1 td {
     vertical-align: top;
     padding: 12px 2% 12px 2%;
     color: #222;
     width: 64%;
   }
-  .container #teiki1 td span {
+  #teiki1 td span {
     display: block;
   }
-  .container #teiki1 td span.small_txt {
+  #teiki1 td span.small_txt {
     font-size: 12px;
   }
-  .container #teiki1 td textarea {
+  #teiki1 td textarea {
     width: 90%;
     border: 1px solid #ccc;
   }
-  .container #itemselect, .container .mgnt20, .container .mgnt10 {
+  #itemselect, .mgnt20, .mgnt10 {
     margin-bottom: 25px;
   }
-  .container .hissu {
+  .hissu {
     font-size: 12px;
     float: right;
     margin-right: 5px;
     padding: 2px 3px;
   }
-  .container .submit-btn img {
+  .submit-btn img {
     width: 100px;
     height: 25px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main_area .inner {
+    width: 40%;
+    padding: 30px 0 30px 60%;
   }
 }
 
