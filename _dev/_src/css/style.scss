@@ -59,7 +59,7 @@ img{
 .main_area{
 	width: 100%;
 	height: 300px;
-	background: #e4ffe1;
+	background: #ffa1a7;
 	margin-bottom: 15px;
 
 	.inner{
@@ -67,12 +67,12 @@ img{
 		height: 240px;
 		margin: 0 auto;
 		padding: 60px 0 0 500px;
-		background: url(../images/main_img_00.png) no-repeat left center;
-		color: #00702d;
+		background: url(../images/main_img_00.jpg) no-repeat left center;
+		color: #000000;
 
         span{
             &.border{
-                border: 1px solid #00702d;
+                border: 1px solid #000000;
                 padding: 3px;
             }
         }
@@ -80,7 +80,7 @@ img{
 		h2{
 			font-weight: bold;
 			font-size: 24px;
-			margin: 13px 0 8px;
+			margin: 15px 0 8px;
 			line-height: 1.5em;
 		}
 
@@ -225,70 +225,6 @@ img{
 }
 
 
-// メールフォームcssコピペ
-
-#teiki1{
-    width: 90%;
-    max-width: 1034px;
-    margin:0 auto;
-    font-size:14px;
-    text-align:left;
-}
-
-.form_ttl{
-    margin:25px 0 0px;
-    font-weight:bold;
-    color:#fff;
-    font-size:17px;
-    text-align:left;
-    padding:8px;
-    text-shadow:0px 0px 3px #999;
-    background: #ffd147; /* Old browsers */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZDE0NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZhYjQwNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iI2ViOTcwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMTg3MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #ffd147 0%, #fab406 50%, #eb9700 54%, #e18700 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd147), color-stop(50%,#fab406), color-stop(54%,#eb9700), color-stop(100%,#e18700)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffd147 0%,#fab406 50%,#eb9700 54%,#e18700 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffd147 0%,#fab406 50%,#eb9700 54%,#e18700 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffd147 0%,#fab406 50%,#eb9700 54%,#e18700 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #ffd147 0%,#fab406 50%,#eb9700 54%,#e18700 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd147', endColorstr='#e18700',GradientType=0 ); /* IE6-8 */
-}
-
-#itemselect,.mgnt20,.mgnt10{
-    width: 100%;
-    max-width: 1034px;
-}
-
-#teiki1 th{
-    background:#FFF1B2;
-    border-bottom:1px solid #CCCCCC;
-    border-right:1px solid #CCCCCC;
-    padding:2px 2px 2px 15px;
-    width:240px;
-    }
-#teiki1 td{
-    background:#fff;
-    border-bottom:1px solid #CCCCCC;
-    border-right:1px solid #CCCCCC;
-    padding:12px 2px 12px 10px;
-    color:#222;
-    }
-#itemselect,.mgnt20,.mgnt10{
-    border-left:1px solid #CCCCCC;
-    border-top:1px solid #CCCCCC;
-    margin-bottom:25px;
-    }
-.hissu{
-    font-size:12px;
-    background:#ff0000;
-    color:#fff;
-    border-radius:5px;
-    float:right;
-    margin-right:5px;
-    padding:2px 3px
-}
-
-
 @media screen and ( max-width:1200px) {
 
     .main_area{
@@ -338,68 +274,8 @@ img{
         img{
             width: 100%;
         }
-
-        #teiki1{
-    		width: 100%;
-    		margin:0 auto;
-    		font-size:14px;
-    		text-align:left;
-    	}
-
-    	.form_ttl{
-    		margin:25px 0 0px;
-    		font-weight:bold;
-    		color:#fff;
-    		font-size:17px;
-    		text-align:left;
-    		padding:8px;
-    	}
-
-    	#itemselect,.mgnt20,.mgnt10{
-    		width: 100%;
-    	}
     }
 
-    #teiki1 th{
-        padding: 12px 2% 12px 2%;
-        width: 28%;
-        vertical-align: top;
-        }
-    #teiki1 td{
-        vertical-align: top;
-        padding:12px 2% 12px 2%;
-        color:#222;
-        width: 64%;
-
-        span{
-            display: block;
-
-            &.small_txt{
-                font-size: 12px;
-            }
-        }
-
-        textarea{
-            width: 90%;
-            border: 1px solid #ccc;
-        }
-    }
-    #itemselect,.mgnt20,.mgnt10{
-        margin-bottom:25px;
-        }
-    .hissu{
-        font-size:12px;
-        float:right;
-        margin-right:5px;
-        padding:2px 3px;
-    }
-
-    .submit-btn{
-        img{
-            width: 100px;
-            height: 25px;
-        }
-    }
 }
 
 
