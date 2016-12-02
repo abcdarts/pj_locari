@@ -121,10 +121,18 @@ img{
 		h4{
 			font-weight: bold;
 			margin-bottom: 20px;
+
+            &.mb0{
+                margin-bottom: 0;
+            }
+
+            &.mb10{
+				margin-bottom: 10px;
+			}
 		}
 
 		p{
-			margin-bottom: 20px;
+			margin-bottom: 22px;
 
 			&.image{
 				text-align: center;
@@ -174,12 +182,15 @@ img{
 				float: left;
 				width: 33.3%;
 
+                .image{
+                    margin-bottom: 10px;
+                }
+
 				.text{
 					padding-right: 15px;
 
 					strong{
 						font-weight: bold;
-						display: block;
 					}
 				}
 			}
@@ -197,17 +208,21 @@ img{
         }
 
 		.course{
-			border: 5px solid #006e1d;
 
 			.link-btn{
-				width: 94%;
-				margin: 0 auto 8px;
+				width: 87%;
+				margin: -30% auto 8px;
+                position: relative;
+                z-index: 10;
 
 				a{
 					display: block;
-					background: #ff4c00;
+                    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff86ac), color-stop(1, #ff3f92) );
+                	background:-moz-linear-gradient( center top, #ff86ac 5%, #ff3f92 100% );
+                	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff86ac', endColorstr='#ff3f92');
+                	background-color:#ff86ac;
 					color: #fff;
-					font-size: 17px;
+					font-size: 20px;
 					text-align: center;
 					padding: 10px 0;
 
@@ -216,10 +231,6 @@ img{
 					}
 				}
 			}
-		}
-
-		.bnr{
-			margin-top: 9px;
 		}
 	}
 }

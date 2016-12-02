@@ -153,8 +153,16 @@ img {
   margin-bottom: 20px;
 }
 
+.container .main_content h4.mb0 {
+  margin-bottom: 0;
+}
+
+.container .main_content h4.mb10 {
+  margin-bottom: 10px;
+}
+
 .container .main_content p {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .container .main_content p.image {
@@ -202,13 +210,16 @@ img {
   width: 33.3%;
 }
 
+.container .main_content ul li .image {
+  margin-bottom: 10px;
+}
+
 .container .main_content ul li .text {
   padding-right: 15px;
 }
 
 .container .main_content ul li .text strong {
   font-weight: bold;
-  display: block;
 }
 
 .container .aside_content {
@@ -221,30 +232,27 @@ img {
   width: 100%;
 }
 
-.container .aside_content .course {
-  border: 5px solid #006e1d;
-}
-
 .container .aside_content .course .link-btn {
-  width: 94%;
-  margin: 0 auto 8px;
+  width: 87%;
+  margin: -30% auto 8px;
+  position: relative;
+  z-index: 10;
 }
 
 .container .aside_content .course .link-btn a {
   display: block;
-  background: #ff4c00;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff86ac), color-stop(1, #ff3f92));
+  background: -moz-linear-gradient(center top, #ff86ac 5%, #ff3f92 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff86ac', endColorstr='#ff3f92');
+  background-color: #ff86ac;
   color: #fff;
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;
   padding: 10px 0;
 }
 
 .container .aside_content .course .link-btn a:hover {
   text-decoration: none;
-}
-
-.container .aside_content .bnr {
-  margin-top: 9px;
 }
 
 @media screen and (max-width: 1200px) {
