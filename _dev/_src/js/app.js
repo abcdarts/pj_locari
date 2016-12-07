@@ -65,5 +65,25 @@
 	        sideNavFixed();
         }
 
+        var smoothScroll = function(){
+            $("a[href^=#]").click(function(e){
+                e.preventDefault();
+                var target =$($(this).attr("href")).offset().top;
+                //fixed要素がある場合などは値をマイナスして調整
+                $('html,body').animate(
+                    {
+                        scrollTop:target
+                    },
+                    {
+                        duration: 'slow',
+                        easing: 'swing'
+                    }
+                );
+                return(false);
+            });
+        }
+
+        smoothScroll();
+
 	});
 })();
