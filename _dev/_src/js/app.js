@@ -10,11 +10,13 @@
             var winW = $(window).width();
 
 			if(scroll > changeScrollPos){
-				$('.aside_content').css({
-					'position': 'absolute',
-                    'top': scroll - changeScrollPos + 15,
-                    'right': 0
-				});
+        if(scroll - changeScrollPos + 15 < 7436){
+  				$('.aside_content').css({
+  					'position': 'absolute',
+                      'top': scroll - changeScrollPos + 15,
+                      'right': 0
+  				});
+        }
 			}else{
 				$('.aside_content').css({
 					'position': 'relative',
@@ -23,15 +25,17 @@
 			}
 
 			$(window).on('scroll', function(){
-                changeScrollPos = $('.c_hdr_content').height() + $('.main_area').height();
+        changeScrollPos = $('.c_hdr_content').height() + $('.main_area').height();
 				scroll = $(window).scrollTop();
 
 				if(scroll > changeScrollPos){
-					$('.aside_content').css({
-						'position': 'absolute',
+          if(scroll - changeScrollPos + 15 < 7436){
+    				$('.aside_content').css({
+    					'position': 'absolute',
                         'top': scroll - changeScrollPos + 15,
-						'right': 0
-					});
+                        'right': 0
+    				});
+          }
 				}else{
 					$('.aside_content').css({
 						'position': 'relative',
