@@ -1298,7 +1298,7 @@ form .custom-select:before {
   width: 30px;
   height: 100%;
   padding: 0 0.35em;
-  background: #b8b8b8 url(../img/common/select_arrow_sml.png) no-repeat center center;
+  background: #b8b8b8 url(../images/select_arrow_sml.png) no-repeat center center;
   text-align: center;
   content: '';
   border-left: 1px solid #aaa;
