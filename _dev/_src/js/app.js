@@ -67,7 +67,7 @@
         }
 
         var smoothScroll = function(){
-            $("a[href^=#]").click(function(e){
+            $("a.scroll").click(function(e){
                 e.preventDefault();
                 var target =$($(this).attr("href")).offset().top;
                 //fixed要素がある場合などは値をマイナスして調整
