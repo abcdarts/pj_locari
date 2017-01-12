@@ -30,7 +30,7 @@
                 changeScrollPos = $('.c_hdr_content').height() + $('.main_area').height();
 				scroll = $(window).scrollTop();
 
-				if(scroll > changeScrollPos && scroll - (contentH + changeScrollPos - asideH) <= 0){
+				if(scroll > changeScrollPos){
                     // スクロール中位置固定されて追従している場合
 					$('.aside_content').css({
 						'position': 'absolute',
@@ -38,15 +38,7 @@
                         'bottom': 'auto',
 						'right': 0
 					});
-				}else if(scroll > changeScrollPos && scroll - (contentH + changeScrollPos - asideH) >= 0){
-                    // 下で位置固定されている場合
-                    $('.aside_content').css({
-						'position': 'absolute',
-                        'top': 'auto',
-                        'bottom': 30,
-						'right': 0
-					});
-                }else{
+				}else{
                     // 上で位置固定されていない場合
 					$('.aside_content').css({
 						'position': 'relative',
@@ -64,26 +56,6 @@
         if(winW > 768){
 	        sideNavFixed();
         }
-
-        var smoothScroll = function(){
-            $("a[href^=#]").click(function(e){
-                e.preventDefault();
-                var target =$($(this).attr("href")).offset().top;
-                //fixed要素がある場合などは値をマイナスして調整
-                $('html,body').animate(
-                    {
-                        scrollTop:target
-                    },
-                    {
-                        duration: 'slow',
-                        easing: 'swing'
-                    }
-                );
-                return(false);
-            });
-        }
-
-        smoothScroll();
 
 	});
 })();
