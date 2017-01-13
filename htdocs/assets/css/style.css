@@ -213,7 +213,7 @@ img {
 
 .container .aside_content {
   float: right;
-  width: 30%;
+  width: 300px;
   margin-right: 20px;
 }
 
@@ -274,6 +274,26 @@ img {
   }
   .container img {
     width: 100%;
+  }
+  .aside_content {
+    float: right;
+    width: 30%;
+    margin-right: 20px;
+  }
+  .aside_content img {
+    width: 100%;
+  }
+  .aside_content .bnr {
+    width: 94%;
+    margin: -77px auto 8px;
+  }
+  .aside_content .bnr a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .aside_content .bnr a:hover {
+    text-decoration: none;
   }
 }
 
