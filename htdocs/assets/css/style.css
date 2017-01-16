@@ -211,9 +211,17 @@ img {
   display: block;
 }
 
+.container .main_content ul li .image {
+  margin-bottom: 10px;
+}
+
+.container .main_content ol {
+  margin: 0 auto 20px;
+}
+
 .container .aside_content {
   float: right;
-  width: 300px;
+  width: 30%;
   margin-right: 20px;
 }
 
@@ -240,20 +248,21 @@ img {
   .main_area {
     width: 100%;
     height: auto;
-    background: #e4ffe1;
+    background: #e3fddb;
     margin-bottom: 15px;
   }
   .main_area .inner {
-    width: 60%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 30px 0 30px 40%;
+    padding: 30px 0 30px 380px;
+    box-sizing: border-box;
     background: url(../images/main_img_00.jpg) no-repeat left center;
     background-size: contain;
-    color: #00702d;
+    color: #fc7270;
   }
   .main_area .inner span.border {
-    border: 1px solid #00702d;
+    border: 1px solid #fc7270;
     padding: 3px;
   }
   .main_area .inner span.block {
@@ -299,8 +308,9 @@ img {
 
 @media screen and (max-width: 960px) {
   .main_area .inner {
-    width: 40%;
-    padding: 30px 0 30px 60%;
+    width: 100%;
+    padding: 30px 3%;
+    background: none;
   }
 }
 
@@ -409,6 +419,9 @@ img {
     font-weight: bold;
     display: block;
   }
+  .container .main_content ol {
+    margin: 0 auto 20px;
+  }
   .container .aside_content {
     float: none;
     width: 94%;
@@ -418,9 +431,6 @@ img {
   }
   .container .aside_content img {
     width: 100%;
-  }
-  .container .aside_content .course {
-    border: 5px solid #006e1d;
   }
   .container .aside_content .course .link-btn {
     width: 94%;
@@ -436,8 +446,5 @@ img {
   }
   .container .aside_content .course .link-btn a:hover {
     text-decoration: none;
-  }
-  .container .aside_content .bnr {
-    margin-top: 9px;
   }
 }
